@@ -1,0 +1,13 @@
+[
+    {
+        "model": "discogapi.discog",
+        "pk": 1,
+        "fields": {
+            "artist": "Gene Harris",
+            "title": "Astralsignal",
+            "condition": "near mint",
+            "image": "https://upload.wikimedia.org/wikipedia/en/6/61/GeneHarris_AstralSignal.jpg",
+            "paid": 37.00
+        }
+    }
+]

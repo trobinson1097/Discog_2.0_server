@@ -1,0 +1,10 @@
+[
+    {
+        "model": "discogapi.discuser",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "bio": "jazz only please, or prove your disc is worth it"
+        }
+    }
+]

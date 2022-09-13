@@ -1,0 +1,51 @@
+[
+    {
+        "model": "discogapi.genre",
+        "pk": 1,
+        "fields": {
+            "name": "Jazz"
+        }
+    },
+    {
+        "model": "discogapi.genre",
+        "pk": 2,
+        "fields": {
+            "name": "R&B"
+        }
+    },
+    {
+        "model": "discogapi.genre",
+        "pk": 3,
+        "fields": {
+            "name": "Electric / House"
+        }
+    },
+    {
+        "model": "discogapi.genre",
+        "pk": 4,
+        "fields": {
+            "name": "Rock / Heavy Metal"
+        }
+    },
+    {
+        "model": "discogapi.genre",
+        "pk": 5,
+        "fields": {
+            "name": "Classical"
+        }
+    },
+    {
+        "model": "discogapi.genre",
+        "pk": 6,
+        "fields": {
+            "name": "Pop"
+        }
+    },
+    {
+        "model": "discogapi.genre",
+        "pk": 7,
+        "fields": {
+            "name": "Funk / Soul"
+        }
+    }
+]
