@@ -1,0 +1,26 @@
+[
+    {
+        "model": "discogapi.discoggenre",
+        "pk": 1,
+        "fields": {
+            "discog": 1,
+            "genre": 1
+        }
+    },
+    {
+        "model": "discogapi.discoggenre",
+        "pk": 2,
+        "fields": {
+            "discog": 1,
+            "genre": 2
+        }
+    },
+    {
+        "model": "discogapi.discoggenre",
+        "pk": 3,
+        "fields": {
+            "discog": 1,
+            "genre": 7
+        }
+    }
+]
