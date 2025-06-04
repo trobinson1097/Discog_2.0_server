@@ -1,0 +1,10 @@
+[
+    {
+        "model": "discogapi.userdiscog",
+        "pk": 1,
+        "fields": {
+            "disc_user": 1,
+            "discog": 1
+        }
+    }
+]

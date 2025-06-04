@@ -1,16 +1,26 @@
-from django.contrib import admin
-from django.urls import path, include
 from rest_framework import routers
-from discogapi.views import DiscUserViewSet, DiscogGenreViewSet, DiscogViewSet, GenreViewSet, UserDiscogViewSet
+from django.contrib import admin
+from django.conf.urls import include
+from django.urls import path
+from discogapi.views import register_user, login_user, DiscogView, GenreView
+from discogapi.views.disc_user import DiscUserView
 
-router = routers.DefaultRouter()
-router.register(r'discusers', views.DiscUserViewSet)
-router.register(r'discoggenres', views.DiscogGenreViewSet)
-router.register(r'discogs', views.DiscogViewSet)
-router.register(r'genres', views.GenreViewSet)
-router.register(r'userdiscogs', views.UserDiscogViewSet)
+router = routers.DefaultRouter(trailing_slash=False) 
+# ^ tells the router to accept /gametypes instead of /gametypes/
+router.register(r'discogs', DiscogView, 'discog')
+router.register(r'genres', GenreView, 'genre')
+router.register(r'discusers', DiscUserView, 'discuser')
+
+
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
-    path('api/', include(router.urls)),
+    path('register', register_user),
+    path('login', login_user),
+    path('admin/', admin.site.urls),
+    path('', include(router.urls)),
+    # path('', include('levelupreports.urls')),
+
 ]
+
+
+
