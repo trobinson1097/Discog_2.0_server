@@ -53,3 +53,4 @@ class DiscUserSerializer(serializers.ModelSerializer):
         model = DiscUser
         fields = ('id', 'bio', 'user', 'discogs')
         depth = 2
+

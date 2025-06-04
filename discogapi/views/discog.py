@@ -115,3 +115,4 @@ class DiscogSerializer(serializers.ModelSerializer):
         model = Discog
         fields = ('id', 'artist', 'title', 'condition', 'paid', 'image', 'genres', 'collected')
         depth = 1
+
